@@ -25,7 +25,7 @@ namespace CareerCloud.BusinessLogicLayer
         protected override void Verify(CompanyProfilePoco[] pocos)
         {
             List<ValidationException> exceptions = new List<ValidationException>();            
-            Regex validateURLRegex = new Regex("\b(?:https?://)?(?:www\\.)?\\w+\\.(?:com|biz|ca)\b");
+            Regex validateURLRegex = new Regex("\\b(?:https?://)?(?:www\\.)?\\w+\\.(?:com|biz|ca)\\b");
             Regex validatePhoneRegex = new Regex("^\\d{3}-\\d{3}-\\d{4}$");
             foreach (var poco in pocos)
             {

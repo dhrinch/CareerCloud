@@ -23,9 +23,9 @@ namespace CareerCloud.BusinessLogicLayer
             this.dataRepository.Update(pocos);
         }
 
-        public void Delete(SystemLanguageCodePoco pocos)
+        public void Delete(SystemLanguageCodePoco poco)
         {
-            this.dataRepository.Remove(pocos);
+            this.dataRepository.Remove(poco);
         }
 
         public virtual SystemLanguageCodePoco Get(string id)
